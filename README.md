@@ -1,18 +1,5 @@
-# sinatra-template
+Dish Discovery
 
-Use this repository to create new Sinatra apps. 
+Project Description: A web application that generates a random recipe at the click of a button. Simply click "Generate Recipe" to recieve a recipe.
 
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+Ruby version: 3.2.1

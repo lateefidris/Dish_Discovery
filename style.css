@@ -1,6 +1,7 @@
 body {
-  font-family: 'Montserrat', sans-serif; 
-  
+  font-family: 'Montserrat', sans-serif;
+  max-width: 900px;
+  margin: 0 auto; /* Center the body horizontally */  
 }
 
 .container{
@@ -12,4 +13,13 @@ body {
  .image {
   border: 6px solid #000000;
   object-fit: fill;
+ }
+
+ .text-container {
+  max-width: 700px;
+  text-align: center; 
+ }
+
+ h1 {
+  text-align: center; 
  }
