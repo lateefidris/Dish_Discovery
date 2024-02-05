@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Recipe Results</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  
+
+  </head>
+
+  <body>
+
+    <h1> <%= @title %> </h1>
+
+    <p> <%= @summary %> </p>
+
+    <div class="container">
+      <img src=<%= @image %> alt=<%= @title %> class="image">
+    </div>
+
+    <div>
+      <h3>Ingredients</h3>
+      <ul>
+        <% @ingredients.each do |ingredient| %>    
+          <li><%= ingredient.fetch("name") %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Steps</h3>
+      <ol>
+        <% @steps.each do |step| %>    
+          <li><%= step.fetch("step") %></li>
+        <% end %>
+      </ol>
+    <div>
+
+
+    <p><a href=/>Go back</a><p>
+
+  </body>
+</html>
